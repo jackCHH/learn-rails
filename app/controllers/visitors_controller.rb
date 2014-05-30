@@ -3,5 +3,7 @@ class VisitorsController < ApplicationController
 	#be available in view.html.erb
 	def new
 		@owner = Owner.new
+		flash.now[:notice] = "Welcome!"
+		flash.now[:alert] = "My birthday is soon!"
 	end
 end
